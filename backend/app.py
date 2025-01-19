@@ -6,9 +6,7 @@ app = Flask(__name__)
 @app.route('/items', methods=['GET'])
 def get_items():
     items = [
-        {"id": 1, "name": "Item 1"},
-        {"id": 2, "name": "Item 2"},
-        {"id": 3, "name": "Item 3"}
+        {"id": 1, "name": "Item 1"}
     ]
     return jsonify(items)
 
